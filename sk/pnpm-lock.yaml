@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^20.10.1
     version: 20.10.1
   pocketbase-typegen:
-    specifier: ^1.1.2
-    version: 1.1.2
+    specifier: ^1.2.1
+    version: 1.2.1
   prettier:
     specifier: ^3.1.0
     version: 3.1.0
@@ -764,6 +764,11 @@ packages:
     resolution: {integrity: sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==}
     dev: true
 
+  /dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
+    dev: true
+
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
     requiresBuild: true
@@ -1445,12 +1450,13 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pocketbase-typegen@1.1.2:
-    resolution: {integrity: sha512-DMFEvBAxnOdoIcqTGzDnyxC41Xn0oBFgFi9goam5jmFum9xKDqMABHlWPJXrHzkbX3LEZ91MvgYoO2eMVzPoqw==}
+  /pocketbase-typegen@1.2.1:
+    resolution: {integrity: sha512-gxWcFh0XoksgKw+aEN5W+exGQC3WndmhXQSK7iSvMyEsx2PpO1M4QaYksqkDf+ruBfTDOm8/ZaTO9jvdS6a78A==}
     hasBin: true
     dependencies:
       commander: 9.4.1
       cross-fetch: 3.1.5
+      dotenv: 16.4.5
       form-data: 4.0.0
       sqlite: 4.1.2
       sqlite3: 5.1.4
@@ -1694,9 +1700,6 @@ packages:
   /sqlite3@5.1.4:
     resolution: {integrity: sha512-i0UlWAzPlzX3B5XP2cYuhWQJsTtlMD6obOa1PgeEQ4DHEXUuyJkgv50I3isqZAP5oFc2T8OFvakmDh2W6I+YpA==}
     requiresBuild: true
-    peerDependenciesMeta:
-      node-gyp:
-        optional: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.10
       node-addon-api: 4.3.0
